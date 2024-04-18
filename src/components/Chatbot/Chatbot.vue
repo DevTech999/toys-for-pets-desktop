@@ -320,15 +320,7 @@ async function startOver(){
   onMounted(() => {
   // methodModel.textToVoice(" ");
   defaultMessage()
-  $("#chat-circle").click(function () {
-    $("#chat-circle").toggle("scale");
-    $(".chat-box").toggle("scale");
-  });
-
-  $(".chat-box-toggle").click(function () {
-    $("#chat-circle").toggle("scale");
-    $(".chat-box").toggle("scale");
-  });
+  
   // $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight}, 10000);
 });
 </script>
@@ -336,10 +328,6 @@ async function startOver(){
 
 <template>
      <div>
-    <div id="chat-circle" class="btn btn-raised">
-      <img v-if="botimage" :src="botimage" class="img-fluid">
-      <img v-else src="@/assets/images/WinstonIcon512.png" class="img-fluid">
-    </div>
     <div class="chat-box">
       <div class="chat-box-header">
         <div class="chat_box_header_logo d-flex align-items-center">

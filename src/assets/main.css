@@ -29,7 +29,13 @@ a,
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     padding: 0 2rem;
   }
+}
+@media (max-width:575px){
+  #app {
+    padding: 1em;
+  }
+  
 }
